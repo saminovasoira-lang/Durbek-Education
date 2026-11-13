@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Durbek Education 2.0</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- LOGIN -->
+    <section id="loginPage" class="login-page">
+        <form class="login-box" id="loginForm">
+            <div class="logo">DE</div>
+            <h1>Durbek Education</h1>
+            <p>Kelajagingizni bilim bilan yarating</p>
+
+            <label>Login</label>
+            <input id="username" placeholder="Loginni kiriting" required>
+
+            <label>Parol</label>
+            <input id="password" type="password" placeholder="Parolni kiriting" required>
+
+            <button class="primary-btn">Tizimga kirish</button>
+
+            <div class="demo-info">
+                <strong>Demo hisoblar:</strong>
+                <p>Admin: admin / 1234</p>
+                <p>O'qituvchi: jasur / 1234</p>
+                <p>O'quvchi: ali / 1234</p>
+            </div>
+        </form>
+    </section>
+
+    <!-- APPLICATION -->
+    <div id="app" class="app hidden">
+
+        <aside class="sidebar" id="sidebar">
+            <div class="brand">
+                <div class="logo">DE</div>
+                <div>
+                    <h2>Durbek</h2>
+                    <small>EDUCATION</small>
+                </div>
+            </div>
+
+            <div class="profile">
+                <div class="avatar" id="avatar">D</div>
+                <div>
+                    <strong id="profileName">Durbek</strong>
+                    <small id="profileRole">Admin</small>
+                </div>
+            </div>
+
+            <nav id="navigation">
+                <p class="nav-title">ASOSIY</p>
+                <a href="#" class="nav-link active" data-page="dashboard">⌂ Dashboard</a>
+                <a href="#" class="nav-link" data-page="students">♙ O'quvchilar</a>
+                <a href="#" class="nav-link" data-page="teachers">♧ O'qituvchilar</a>
+                <a href="#" class="nav-link" data-page="courses">▤ Kurslar</a>
+                <a href="#" class="nav-link" data-page="groups">▦ Guruhlar</a>
+
+                <p class="nav-title">TA'LIM</p>
+                <a href="#" class="nav-link" data-page="attendance">◷ Davomat</a>
+                <a href="#" class="nav-link" data-page="history">◴ Davomat tarixi</a>
+                <a href="#" class="nav-link" data-page="tests">▣ Online test</a>
+                <a href="#" class="nav-link" data-page="ranking">★ Reyting</a>
+
+                <p class="nav-title">MOLIYA</p>
+                <a href="#" class="nav-link" data-page="payments">💰 To'lovlar</a>
+                <a href="#" class="nav-link" data-page="reports">▥ Hisobotlar</a>
+
+                <p class="nav-title">SHAXSIY</p>
+                <a href="#" class="nav-link" data-page="profile">♙ Profil</a>
+                <a href="#" class="nav-link" data-page="notifications">♧ Bildirishnomalar</a>
+            </nav>
+
+            <button class="logout-btn" id="logoutBtn">↪ Chiqish</button>
+        </aside>
+
+        <main class="main-content">
+            <header class="topbar">
+                <button class="menu-btn" id="menuBtn">☰</button>
+
+                <div>
+                    <h2 id="pageTitle">Dashboard</h2>
+                    <p>Durbek Education boshqaruv tizimi</p>
+                </div>
+
+                <div class="top-right">
+                    <button class="notification-btn" id="notificationBtn">
+                        ♧ <span id="notificationCount">0</span>
+                    </button>
+                    <span class="status">● Online</span>
+                    <div class="avatar small-avatar" id="topAvatar">D</div>
+                </div>
+            </header>
+
+            <section class="content" id="content"></section>
+
+            <footer>© 2026 Durbek Education | Version 2.0</footer>
+        </main>
+    </div>
+
+    <div id="toast" class="toast"></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
